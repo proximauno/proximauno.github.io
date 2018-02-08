@@ -7,13 +7,14 @@
 <head>
   <!-- The charset definition must be the first child of the `<head>` tag. -->
   <meta charset="utf-8">
-  <title>Hello World</title>
+  <title>Proxima Uno</title>
   <!-- The AMP runtime must be loaded as the second child of the `<head>` tag.-->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <!--
     AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.
   -->
-  <link rel="canonical" href="https://ampbyexample.com/introduction/hello_world/">
+  <link rel="canonical" href="https://proxima.uno">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <!--
     AMP HTML files require a viewport declaration. It's recommended to include initial-scale=1.
   -->
@@ -22,8 +23,64 @@
     CSS must be embedded inline.
   -->
   <style amp-custom>
+    body {
+      color: rgba(0,0,0,0.72);
+      font-size: 1.375rem;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 3rem;
+    }
     h1 {
-      color: red;
+      
+    }
+    .container{
+      max-width: 900px;
+      margin: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    hr{
+      display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin: 1em 0;
+    padding: 0; 
+    }
+    .row{
+      width: 100%;
+    }
+    .center{
+      text-align: center;
+    }
+    .footer{
+      color: #888;
+      font-size: 0.7em;
+    }
+    .left{
+      float: left;
+    }
+    .right{
+      float: right;
+    }
+    .top-margin{
+      margin-top: 40px;
+    }
+    .bottom-margin{
+      margin-bottom: 40px;
+    }
+    .button{
+      display: block;
+      border: 2px solid #888;
+      color: #888;
+      border-radius: 40px;
+      padding: 10px;
+      text-decoration: none;
+      width: 200px;
+      text-align: center;
+      font-size: 1.0em;
+    }
+    .auto{
+      margin: auto;
     }
   </style>
   <!--
@@ -37,8 +94,48 @@
   <!--
     Most HTML tags can be used directly in AMP HTML.
   -->
-  <h1>Simplicity Developers</h1>
-  <p>Test</p>
-
+  <div class="container">
+    <div class="row center top-margin">
+      <amp-img src="proxima-logo.svg" class="logo" alt="Proxima Logo" height="200" width="300"></amp-img>
+    </div>
+    <h1>Bleeding edge technologies at your service.</h1>
+    <hr>
+    <div class="row top-margin bottom-margin">
+      <p>Hire motivated developers who are driven to keep their skills sharp in the most widely adopted technologies today.</p>
+      <p>Proxima Uno is a team of motivated developers, available on demand, focused on producing ⭐ quality software and deliver them blazing fast.</p>
+      <h2>Our Fields</h2>
+      <p>We are <b>Only</b> Developers. Even our project manager are developers.</p>
+      <p>We work and constantly study new technologies like Mobile, Blockchain, IoT, AR, Big Data and Machine Learning to help our customers leverage their opportunities.</p>
+      <p>We thrive to share our knowledge and are active in open source community.</p>
+      <h2>Our Mantras</h2>
+      <p>Speed, scalability, MVP, UX.</p>
+      <h2>Our Metodology</h2>
+      <p>We adopt Scrum Agile Metodology, using our in-house made software <a href="#">Performance.vc</a> to organize the work.</p>
+      <p>We have an easy pricing strategy, every developer hour is 1 story point, we set a free meeting for you in order to identify your needs and provide you an estimate of the various dev.</p>
+      <h2>Our Pricing</h2>
+      <p>1 Story Point = 1 Hour of Development. <abbr title="Minimum Order Quantity">MOQ</abbr>: 100 Story Points.</p>
+      <p>< 500 Story Points, € 90.00 + vat</p>
+      <p>> 500 Story Points, € 60.00 + vat</p>
+      <p>> 1.000 Story Points, € 50.00 + vat</p>
+      <h2>Our Mission</h2>
+      <p>We want to move the knowledge and empower it, in less than 20 years people will lose job replaced by software. We teach child and people to code as a no-profit. 1/3 of price will be devolved in teaching.</p>
+      <h2>Referral Program</h2>
+      Are you a reseller? A digital agency? Or a consulting company? [Blog Posts & Email CRM]
+      <h2>Work with us</h2>
+      <p>Do you like coding, computer science and problem solving? <a href="#">Send your CV</a>. We devolve 1h a day to custom projects</p>
+      <a href="mailto:hello@proxima.uno" class="button auto">GET IN TOUCH 👨‍💻</a>
+    </div>
+    <hr>
+    <ul>
+      <li><a href="#">Work with us</a></li>
+      <li><a href="#">Our Pricing</a></li>
+      <li><a href="#">Our Metodology</a></li>
+      <li><a href="#">Blog & News</a></li>
+      <li><a href="#">Our GitHub Account</a></li>
+    </ul>
+    <hr>
+    <p class="footer left">Copyright © 2018 Proxima Srl. All rights reserved.</p>
+    <p class="footer right">P.IVA: 01503830703, Share Capital € 35.000 i.v.</p>
+  </div>
 </body>
 </html>
